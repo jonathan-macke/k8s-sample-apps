@@ -3,5 +3,6 @@ kind: Kustomization
 namespace: my-namespace
 bases:
   - ../base
+
 resources:
   - deployment.yaml

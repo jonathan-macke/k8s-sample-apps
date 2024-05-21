@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send(`Hello world. \n Welcome on cluster ${cluster}`);
+  res.send(`Hello world. Welcome on cluster ${cluster}`);
 });
 
 
