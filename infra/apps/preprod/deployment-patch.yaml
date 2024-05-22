@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  namespace: my-namespace
+spec:
+  template:
+    spec:
+      containers:
+        - name: app
+          image: localhost:5000/myapp

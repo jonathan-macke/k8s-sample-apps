@@ -4,3 +4,4 @@ namespace: my-namespace
 
 resources:
   - service.yaml
+  - deployment.yaml

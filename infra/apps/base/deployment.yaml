@@ -15,9 +15,12 @@ spec:
     spec:
       containers:
         - name: app
-          image: localhost:5000/myapp
+          image: TO_BE_REPLACED
           ports:
           - containerPort: 3000
           env: 
           - name: CLUSTER
-            value: "preprod"
+            valueFrom:
+              configMapKeyRef:
+                name: app-config
+                key: CLUSTER
